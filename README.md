@@ -26,8 +26,8 @@ To install it directly from GitHub, you can use `install_github()` from the [dev
 
 ```
 library(devtools)
-install_github("rkward-community/rkTeaching") # stable release
-install_github("rkward-community/rkTeaching", ref="develop") # development release
+install_github("rkward-community/rk.Teaching") # stable release
+install_github("rkward-community/rk.Teaching", ref="develop") # development release
 ```
 
 You can safely ignore warnings about the (unavailable) package "rkward", it was installed together with RKWard.
