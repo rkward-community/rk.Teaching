@@ -16,12 +16,12 @@ function setGlobals() {
 
 function calculate() {
 	setGlobals();
-	echo('result <- tosscoin(' + ncoins + ', makespace=' + prob + ')\n');
+	echo('results <- tosscoin(' + ncoins + ', makespace=' + prob + ')\n');
 	echo('for (i in 1:' + ncoins + ') {\n');
 	echo('\t names(results)[i]= paste0(' + i18n("coin") + ', i)\n');
 	echo('\t levels(results[[i]])=c(' + i18nc("Head of a coin", "H") + ',' + i18nc("Tail of a coin", "T") + ')\n');
 	echo('}\n');
-	echo('assign("' + dataframe + '", result, .GlobalEnv)\n');
+	echo('assign("' + dataframe + '", results, .GlobalEnv)\n');
 }
 
 function printout() {

@@ -47,7 +47,7 @@ function calculate() {
 	if (getBoolean("median"))
 		statistics += "\t\tmedian = median(value, " + narm + "),\n ";
 	if (getBoolean("mode"))
-		statistics += "\t\tmode = mode(value),\n";
+		statistics += "\t\tmode = Mode(value),\n";
 	if (getBoolean("variance"))
 		statistics += "\t\tvariance = variance(value, " + narm + "),\n";
 	if (getBoolean("unvariance"))
